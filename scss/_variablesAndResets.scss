@@ -1,0 +1,67 @@
+            // =========================> Variables
+$main-grey:#c7c5c6;
+
+
+$button-bgc: #3bc492;
+$red: #e84545;
+$button-hover-bgc: #3d3d3d;
+$light-blue: #00aeda;
+$black: #2d3033;
+$black2: #181818;
+
+
+
+            // =========================> Fonts
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../font/OpenSans/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../font/OpenSans//OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans SemiBold';
+    src: url('../font/OpenSans//OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../font/OpenSans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Merriweather Regular';
+    src: url('../font/Merriweather/Merriweather-Regular.ttf');
+}
+
+        // =========================> Resets
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    overflow-x: hidden;
+    line-height: 1.4;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+

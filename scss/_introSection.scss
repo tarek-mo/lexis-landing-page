@@ -1,0 +1,17 @@
+
+.intro {
+    padding: 100px 0;
+    background-color: $light-blue;
+    h3 {
+        color: #fff;
+        font-family: 'Open Sans Light';
+    }
+    p {
+        font-family: 'Merriweather-Regular', Arial , sans-serif;
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 13px;
+        max-width: 70%;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+}

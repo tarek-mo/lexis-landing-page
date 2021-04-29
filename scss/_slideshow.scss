@@ -1,0 +1,52 @@
+.slideshow {
+    background-color: $light-blue;
+    color: #fff;
+    margin-top: 100px;
+    padding: 100px 15%;
+    p {
+        font-size: 23px;
+        font-family: 'Merriweather Regular';
+        
+        margin: 20px 0 30px 0;
+    }
+    
+    h4 {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        
+        margin: 0;
+        margin-top: 0px;
+        padding: 1rem 0;
+        
+        list-style-type: none;
+        
+            li {
+                margin: 0 0.25rem;
+            }
+        
+            button {
+                width: 11px !important;
+                height: 11px !important;
+                display: block;
+                width: 1rem;
+                height: 1rem;
+                padding: 0;
+                
+                border: none;
+                border-radius: 100%;
+                background-color: rgba(255,255,255, 0.2);
+                
+                text-indent: -9999px;
+            }
+        
+            li.slick-active button {
+                background-color: #fff;
+            }
+        
+    }
+    
+}

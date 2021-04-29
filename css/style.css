@@ -1,0 +1,639 @@
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url("../font/OpenSans/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url("../font/OpenSans//OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url("../font/OpenSans//OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url("../font/OpenSans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Merriweather Regular';
+  src: url("../font/Merriweather/Merriweather-Regular.ttf");
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Open Sans Regular", Arial, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+                    /*      HEADER    */
+
+header {
+  z-index: 100;
+  -webkit-transition: padding 200ms linear;
+  transition: padding 200ms linear;
+  position: fixed;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+header .logo {
+  content: url("../images/logo.png");
+}
+
+header .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .nav {
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+header .nav .nav-link {
+  display: none;
+  font-family: 'Open Sans Bold';
+  color: rgba(255, 255, 255, 0.75);
+}
+
+header .nav .nav-link a:hover {
+  -webkit-transition: color 200ms linear;
+  transition: color 200ms linear;
+  color: white;
+}
+
+header .mobile-nav {
+  padding-left: 0;
+  text-transform: uppercase;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(5, 5, 5, 0.884);
+  font-size: 1.5rem;
+  color: white;
+  z-index: 8;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+header .mobile-nav .nav-link {
+  margin: 7px auto;
+}
+
+header .mobile-nav .nav-link a {
+  color: #c7c5c6;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+  font-family: 'Open Sans Bold';
+}
+
+header .mobile-nav .nav-link a:hover {
+  color: #fff;
+}
+
+header .hamburger-menu {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: #e84545;
+  position: relative;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+}
+
+header .hamburger-menu .hamburger-menu-btn {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  height: 4px;
+  width: 20px;
+  background-color: white;
+  position: relative;
+}
+
+header .hamburger-menu .hamburger-menu-btn::before, header .hamburger-menu .hamburger-menu-btn::after {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 20px;
+  background-color: white;
+}
+
+header .hamburger-menu .hamburger-menu-btn::before {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+header .hamburger-menu .hamburger-menu-btn::after {
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
+header .hamburger-menu.open .hamburger-menu-btn {
+  background: transparent;
+}
+
+header .hamburger-menu.open .hamburger-menu-btn::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .hamburger-menu.open .hamburger-menu-btn::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+header.bg {
+  background-color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+header.bg .nav a:hover {
+  color: #181818;
+}
+
+header.bg * {
+  color: #181818;
+}
+
+header.bg .logo {
+  content: url("../images/logo-fixed.png");
+}
+
+.banner {
+  min-height: 100vh;
+  width: 100vw;
+  background: url("../images/banner.jpg") no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  color: white;
+}
+
+.banner .title h1 {
+  font-family: 'Open Sans Bold';
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  max-width: 70%;
+}
+
+.banner .title p {
+  color: #c7c5c6;
+  max-width: 72%;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.banner .title a {
+  background-color: #3bc492;
+  padding: 15px 40px;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'Open Sans SemiBold';
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+}
+
+.banner .title a:hover {
+  background-color: #3d3d3d;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .banner .title h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .nav .menu {
+    display: none;
+  }
+  header .nav .nav-link {
+    display: inline-block;
+  }
+  .banner .title h1 {
+    font-size: 4rem;
+  }
+}
+
+.intro {
+  padding: 100px 0;
+  background-color: #00aeda;
+}
+
+.intro h3 {
+  color: #fff;
+  font-family: 'Open Sans Light';
+}
+
+.intro p {
+  font-family: 'Merriweather-Regular', Arial , sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  max-width: 70%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+                  /*     Services    */
+
+.services {
+  padding-top: 100px;
+}
+
+.services img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.services h4 {
+  margin-top: 30px;
+  color: #2d3033;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Open Sans Bold', Arial, sans-serif;
+}
+
+.services p {
+  font-size: 13px;
+  color: #6c7279;
+}
+
+                      /*      Works  */
+
+.works {
+  padding-top: 50px;
+}
+
+.works .item {
+  color: #fff;
+  padding: 1px;
+  position: relative;
+}
+
+.works .item a:hover {
+  color: inherit;
+}
+
+.works .item a:hover .work-description {
+  background-color: rgba(0, 174, 218, 0.9);
+}
+
+.works .item a:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.works .item a:hover .work-description h5, .works .item a:hover .work-description p {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.works .item a .img-container {
+  overflow: hidden;
+}
+
+.works .item a img {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+
+.works .item a .work-description {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.works .item a .work-description h5 {
+  font-size: 14px;
+  font-family: 'Open Sans Bold', Arial, sans-serif;
+  text-transform: uppercase;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.works .item a .work-description p {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  font-size: 13px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.works img {
+  max-width: 100%;
+}
+
+
+            /*     TEAM  */
+
+.team {
+  padding-top: 100px;
+}
+
+.team .item {
+  margin-bottom: 60px;
+}
+
+.team .team-member-image {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.team h3 {
+  font-size: 22px;
+  color: #2d3033;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.team h4 {
+  color: #00aeda;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.team p {
+  color: #6c7279;
+  font-size: 13px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.team .social-links {
+  margin-top: 30px;
+}
+
+.team .social-links a {
+  margin: 0 5px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  border-color: #c6cacc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 0.3s linear, color 0.3s linear;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+
+.team .social-links a:hover {
+  background-color: #00aeda;
+  color: #fff;
+}
+
+.team .social-links a i {
+  color: #c6cacc;
+}
+
+
+                /*      CONTACT  */
+
+.contact {
+  padding-top: 100px;
+}
+
+.contact h2 {
+  font-size: 30px;
+  font-family: 'Open Sans Bold';
+  text-transform: uppercase;
+  color: #2d3033;
+}
+
+.contact p {
+  margin: 43px 0;
+  max-width: 700px;
+  color: #6c7279;
+  font-size: 13px;
+}
+
+.contact form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.contact form input {
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+  display: block;
+  margin-bottom: 30px;
+  color: #797979;
+  padding: 15px 30px;
+  border: none;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.contact form .textfield {
+  height: 150px;
+}
+
+.contact form button {
+  border-radius: 2px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 30px;
+  padding: 15px 30px 15px 30px;
+  border: none;
+  outline: none;
+  background-color: #3bc492;
+  font-family: 'Open Sans SemiBold';
+  letter-spacing: 5px;
+}
+
+.contact form button:hover {
+  background-color: #3d3d3d;
+}
+
+
+              /*    TESTIMONIALS  */
+
+.slideshow {
+  background-color: #00aeda;
+  color: #fff;
+  margin-top: 100px;
+  padding: 100px 15%;
+}
+
+.slideshow p {
+  font-size: 23px;
+  font-family: 'Merriweather Regular';
+  margin: 20px 0 30px 0;
+}
+
+.slideshow h4 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.slideshow .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  margin-top: 0px;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+
+.slideshow .slick-dots li {
+  margin: 0 0.25rem;
+}
+
+.slideshow .slick-dots button {
+  width: 11px !important;
+  height: 11px !important;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-indent: -9999px;
+}
+
+.slideshow .slick-dots li.slick-active button {
+  background-color: #fff;
+}
+
+                  /*     FOOTER    */
+
+footer {
+  min-height: 407px;
+  margin-top: 100px;
+  padding-top: 50px;
+  background-color: #181818;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 13px;
+  margin: 0;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Open Sans Bold';
+}
+
+footer .location, footer .services-we-offer, footer .social-media {
+  margin-bottom: 50px;
+}
+
+footer .location .copyright {
+  margin-top: 10px;
+}
+
+footer .location .copyright span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer .location .copyright i {
+  color: #e84545;
+  margin: 0 4px;
+}
+
+footer .services-we-offer ul {
+  padding: 0;
+}
+
+footer .services-we-offer a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+footer .services-we-offer a:hover {
+  color: #e84545;
+}
+
+footer .social-media i {
+  font-size: 21px;
+  color: rgba(255, 255, 255, 0.25);
+  margin: auto 8px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+footer {
+    min-height: 407px;
+    margin-top: 100px;
+    padding-top: 50px;
+    background-color: $black2;
+    p {
+        color: rgba(255, 255, 255, 0.25);
+        font-size: 13px;
+        margin: 0;
+    }
+    h4 {
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Open Sans Bold';
+    }
+
+    .location, .services-we-offer, .social-media {
+        margin-bottom: 50px;
+    }
+
+    .location {
+        .copyright {
+            margin-top: 10px;
+            span {
+                color: rgba(255, 255, 255, 0.50);
+            }
+            i {
+                color: $red;
+                margin: 0 4px;
+            }
+
+        }
+    }
+
+    .services-we-offer {
+        ul {
+            padding: 0;
+        }
+        a {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.50);
+            transition: color 0.3s;
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+
+    .social-media {
+        i {
+            font-size: 21px;
+            color: rgba(255, 255, 255, 0.25);
+            margin: auto 8px;
+        }
+    }
+}

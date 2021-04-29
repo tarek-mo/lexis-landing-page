@@ -1,0 +1,59 @@
+.team {
+    padding-top: 100px;
+    
+    .item {
+        margin-bottom: 60px;
+    }
+    .team-member-image {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    h3 {
+        font-size: 22px;
+        color: $black;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    h4 {
+        color: $light-blue;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #6c7279;
+        font-size: 13px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .social-links {
+        margin-top: 30px;
+        a { 
+            margin: 0 5px;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            border-color: #c6cacc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s linear, color 0.3s linear;
+            &:hover {
+                background-color: #00aeda;
+                color: #fff;
+            }
+
+            i {
+                color: #c6cacc;
+                
+                
+            }
+        
+        }
+    }
+    
+}
