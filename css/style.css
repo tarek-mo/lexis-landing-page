@@ -35,13 +35,15 @@ body {
   
 }
 
+html {
+  overflow-x: hidden !important;
+}
 body {
   min-height: 100vh;
   width: 100vw;
   font-family: "Open Sans Regular", Arial, sans-serif;
   overflow-x: hidden;
   line-height: 1.4;
-  background-color: red;
 }
 
 ul {
