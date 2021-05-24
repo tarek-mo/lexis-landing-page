@@ -1,6 +1,7 @@
-# genesi.pro
+# lexis landing page 
 
-
+## Live URL:
+https://tarekslandingpagedemo3.netlify.app
 
 ## Tools Used 
 
@@ -12,3 +13,5 @@
 ### SCSS
 ### SLICK JS
 ### JQUERY
+
+
