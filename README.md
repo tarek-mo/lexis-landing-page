@@ -6,11 +6,11 @@ https://tarekslandingpagedemo3.netlify.app
 ## Tools Used 
 
 ### HTML
-### CSS
+### SCSS
 ### JAVASCRIPT
 
 ### BOOTSTRAP
-### SCSS
+
 ### SLICK JS
 ### JQUERY
 
